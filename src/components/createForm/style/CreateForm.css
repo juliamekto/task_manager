@@ -1,0 +1,108 @@
+.create-form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.create-form__input {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    box-shadow:  0 0 5px rgba(0,0,0,.3);
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+}
+
+.create-form__input--title {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.create-form__input--responsible {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.create-form__input--description {
+    grid-column: 1/-1;
+    grid-row: 2;
+}
+
+.create-form__input--deadline {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.create-form__btn {
+    grid-column: 2;
+    grid-row: 3;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ed7868;
+    box-shadow:  0 0 5px rgba(0,0,0,.3);
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.create-form__btn:hover {
+    transition: all .2s linear;
+    background-color: #f7a868;
+}
+
+.create-form__btn:active {
+    background-color: #a64b3f;
+}
+
+@media screen and (max-width: 768px) {
+    .create-form__input {
+        height: 30px;
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    .create-form__btn {
+        height: 30px;
+        line-height: 30px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .create-form {
+        grid-template-columns: 1fr;
+        grid-gap: 10px 0;
+    }
+
+    .create-form__input--responsible {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .create-form__input--description {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .create-form__input--deadline {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .create-form__btn {
+        grid-column: 1;
+        grid-row: 5;
+    }
+}
