@@ -1,21 +1,18 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import CreateForm from './components/createForm/container/CreateForm'
+import TaskList from './components/taskList/container/TaskList'
+import './App.css'
 
-class App extends Component {
-  render() {
+const  App = () => {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+        <h1 className='App__title'>Manage your tasks</h1>
+        <div className="App__wrapper">
+          <CreateForm />
+          <TaskList />
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
     );
-  }
 }
 
 export default App;

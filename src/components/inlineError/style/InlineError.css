@@ -1,0 +1,12 @@
+.inline-error {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: red;
+    display: none;
+}
+
+.inline-error--show {
+    display: block;
+}
